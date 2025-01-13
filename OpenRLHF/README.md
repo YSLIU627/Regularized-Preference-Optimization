@@ -14,7 +14,7 @@ pip install packaging
 
 pip install ninja
 MAX_JOBS=4 pip    install flash-attn==2.6.1 --no-build-isolation
-python3 download_data.py
+
 pip install -e .
 ```
 
