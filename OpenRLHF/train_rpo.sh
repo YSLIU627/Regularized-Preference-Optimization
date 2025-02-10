@@ -9,7 +9,7 @@ deepspeed --master_port 13678 --module openrlhf.cli.train_dpo \
    --micro_train_batch_size 2 \
    --max_samples 500000 \
    --pretrain HuggingFaceH4/zephyr-7b-gemma-sft-v0.1\
-   --save_path "models/zephyr-7b-gemma-dpo" \
+   --save_path "models/zephyr-7b-gemma-rpo" \
    --beta 0.5 \
    --save_steps 600 \
    --nll_loss_coef ${ETA} \
