@@ -1,0 +1,2 @@
+,np.tanh(std_delta_len),instruction_difficulty,not_gamed_baseline.astype(float)
+beta_ultra_rdpo_full_eta0.005_beta0.01_no_decay_new,-0.9598774112020975,0.3304843655256872,-0.8798466740571070

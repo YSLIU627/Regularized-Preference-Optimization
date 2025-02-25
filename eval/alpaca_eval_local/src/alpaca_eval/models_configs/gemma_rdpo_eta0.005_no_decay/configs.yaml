@@ -1,0 +1,12 @@
+gemma_rdpo_eta0.005_no_decay:
+  prompt_template: "zephyr-7b-gemma/prompt.txt"
+  fn_completions: "huggingface_local_completions"
+  completions_kwargs:
+    model_name: "../model/gemma_rdpo_eta0.005_no_decay"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 2048
+    temperature: 0.7
+    top_p: 1.0
+    batch_size: 8
+  pretty_name: "gemma_rdpo_eta0.005_no_decay"

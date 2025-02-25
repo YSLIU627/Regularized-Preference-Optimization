@@ -1,0 +1,11 @@
+ultra_rdpo_full_eta0.005_beta0.01_stepwise_decay_prefered_label_noise_0:
+  prompt_template: "Mixtral-8x7B-Instruct-v0.1/togetherai_prompt.txt"
+  fn_completions: "vllm_local_completions"
+  completions_kwargs:
+    model_name: "../model/ultra_rdpo_full_eta0.005_beta0.01_stepwise_decay_prefered_label_noise_0"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 2048
+    temperature: 0.7
+    top_p: 1.0
+  pretty_name: "ultra_rdpo_full_eta0.005_beta0.01_stepwise_decay_prefered_label_noise_0"

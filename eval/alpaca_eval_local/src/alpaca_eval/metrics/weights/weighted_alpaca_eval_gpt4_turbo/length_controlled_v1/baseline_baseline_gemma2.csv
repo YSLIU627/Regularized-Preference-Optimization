@@ -1,0 +1,3 @@
+,np.tanh(std_delta_len),instruction_difficulty,not_gamed_baseline.astype(float)
+gemma_rdpo_eta0.005_no_decay_tr,-1.4485449952666498,0.3189093147242720,0.6697905994405180
+gemma_dpo_tr,-1.5207456141055995,0.3213939015542968,0.6535821182033227

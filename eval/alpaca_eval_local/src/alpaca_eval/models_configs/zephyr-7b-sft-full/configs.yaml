@@ -1,0 +1,12 @@
+zephyr-7b-sft-full:
+  prompt_template: "zephyr-7b-alpha/prompt.txt"
+  fn_completions: "vllm_local_completions"
+  completions_kwargs:
+    model_name: "alignment-handbook/zephyr-7b-sft-full"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 2048
+    temperature: 0.7
+    top_p: 1.0
+    do_sample: True
+  pretty_name: "zephyr-7b-sft-full-re"

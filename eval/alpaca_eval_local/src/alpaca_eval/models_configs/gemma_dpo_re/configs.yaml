@@ -1,0 +1,11 @@
+gemma_dpo_re:
+  prompt_template: "zephyr-7b-gemma/prompt.txt"
+  fn_completions: "vllm_local_completions"
+  completions_kwargs:
+    model_name: "../model/gemma_dpo"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 2048
+    temperature: 0.7
+    top_p: 1.0
+  pretty_name: "gemma_dpo_re"

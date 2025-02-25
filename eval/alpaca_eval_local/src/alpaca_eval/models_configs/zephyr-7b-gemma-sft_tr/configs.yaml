@@ -1,0 +1,12 @@
+zephyr-7b-gemma-sft_tr:
+  prompt_template: "zephyr-7b-gemma/prompt.txt"
+  fn_completions: "vllm_local_completions"
+  completions_kwargs:
+    model_name: "HuggingFaceH4/zephyr-7b-gemma-sft-v0.1"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 2048
+    temperature: 0.7
+    top_p: 1.0
+    stop_token_ids: [3, 107]
+  pretty_name: "zephyr-7b-gemma-sfttr"
